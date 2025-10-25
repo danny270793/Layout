@@ -1,24 +1,24 @@
-import { defineConfig } from 'vite'
-import path from "node:path"
-import dts from "vite-plugin-dts"
-import { peerDependencies } from "./package.json"
+import { defineConfig } from 'vite';
+import path from 'node:path';
+import dts from 'vite-plugin-dts';
+import { peerDependencies } from './package.json';
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    dts({ tsconfigPath: path.resolve(__dirname, "tsconfig.app.json") })
+    dts({ tsconfigPath: path.resolve(__dirname, 'tsconfig.app.json') }),
   ],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src", "index.ts"),
+      entry: path.resolve(__dirname, 'src', 'index.ts'),
       fileName: (format) => `index.${format}.js`,
-      formats: ["cjs", "es"],
-      cssFileName: "index"
+      formats: ['cjs', 'es'],
+      cssFileName: 'index',
     },
     rollupOptions: {
-      external: Object.keys(peerDependencies)
+      external: Object.keys(peerDependencies),
     },
     sourcemap: true,
-    emptyOutDir: true
-  }
-})
+    emptyOutDir: true,
+  },
+});
