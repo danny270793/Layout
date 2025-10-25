@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 .ios-safe-top {
   padding-top: env(safe-area-inset-top);
