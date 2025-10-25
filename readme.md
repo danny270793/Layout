@@ -19,7 +19,7 @@ npm install @danny270793/layout
 ## Usage
 
 ```tsx
-import { Layout } from '@danny270793/layout'
+import { Layout } from '@danny270793/layout';
 
 function App() {
   return (
@@ -37,7 +37,7 @@ function App() {
         <h1>Footer</h1>
       </Layout.Footer>
     </Layout>
-  )
+  );
 }
 ```
 
@@ -48,9 +48,7 @@ function App() {
 The main container component that wraps your entire layout.
 
 ```tsx
-<Layout className="custom-class">
-  {/* Your layout components */}
-</Layout>
+<Layout className="custom-class">{/* Your layout components */}</Layout>
 ```
 
 ### Layout.Header
@@ -64,6 +62,7 @@ A sticky header component that respects iOS safe areas (notches).
 ```
 
 **Features:**
+
 - Sticky positioning at the top
 - Automatic iOS safe area padding (top, left, right)
 - Customizable with className prop
@@ -79,6 +78,7 @@ The main content area of your application.
 ```
 
 **Features:**
+
 - Automatic iOS safe area padding (left, right)
 - Scrollable content area
 - Customizable with className prop
@@ -94,6 +94,7 @@ A sticky footer component that respects iOS safe areas (home indicator).
 ```
 
 **Features:**
+
 - Sticky positioning at the bottom
 - Automatic iOS safe area padding (bottom, left, right)
 - Customizable with className prop
@@ -120,11 +121,11 @@ npm install -D tailwindcss @tailwindcss/vite
 This library is written in TypeScript and includes type definitions out of the box.
 
 ```tsx
-import type { ReactNode } from 'react'
-import { Layout } from '@danny270793/layout'
+import type { ReactNode } from 'react';
+import { Layout } from '@danny270793/layout';
 
 interface AppProps {
-  title: string
+  title: string;
 }
 
 function App({ title }: AppProps): ReactNode {
@@ -133,7 +134,7 @@ function App({ title }: AppProps): ReactNode {
       <Layout.Header>{title}</Layout.Header>
       <Layout.Content>Content</Layout.Content>
     </Layout>
-  )
+  );
 }
 ```
 
@@ -172,5 +173,6 @@ npm run dev
 ## Author
 
 **Danny Vaca**
+
 - Email: danny270793@gmail.com
 - Website: [https://danny270793.github.io/#/](https://danny270793.github.io/#/)
