@@ -163,7 +163,7 @@ npm run dev
 
 ## License
 
-[MIT](https://github.com/danny270793/layout/license.md)
+[MIT](https://github.com/danny270793/Layout/blob/main/license.md)
 
 ## Repository
 
