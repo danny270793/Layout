@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { Layout } from '@danny270793/layout';
+import '@danny270793/layout/dist/index.css';
 
 export const App = (): ReactNode => {
   return (
