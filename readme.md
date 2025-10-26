@@ -138,6 +138,36 @@ function App({ title }: AppProps): ReactNode {
 }
 ```
 
+## Examples
+
+This repository includes two example projects to help you get started:
+
+### Local Example (`examples/local/`)
+
+For testing the library during local development (before publishing):
+
+```bash
+cd examples/local
+npm install
+npm run dev
+```
+
+This example uses a local file reference to the library in its `package.json`.
+
+### Remote Example (`examples/remote/`)
+
+For testing the library after it's published to npm:
+
+```bash
+cd examples/remote
+npm install
+npm run dev
+```
+
+This example uses the published npm package `@danny270793/layout`.
+
+Both examples demonstrate the same usage patterns and can be used as references for integrating the library into your own projects.
+
 ## Development
 
 ### Building
